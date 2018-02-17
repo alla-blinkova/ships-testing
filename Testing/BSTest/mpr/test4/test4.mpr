@@ -1,0 +1,27 @@
+mscdocument test4;
+msc test4;
+Simulator: instance;
+Strategy: instance;
+Simulator: out InitDataComplete,1 to Strategy;
+Strategy: in InitDataComplete,1 from Simulator;
+Simulator: out ShipsCurrentState,2(1, (: (. 1, 1, REPAIR_BOAT, 0, EAST, 100, (. 10, 10 .), (: 10, 10, 10, 10 :) .), (. 2, 1, CRUISER, 0, EAST, 50, (. 11, 11 .), (: 5, 5, 5, 5 :) .) :)) to Strategy;
+Strategy: in ShipsCurrentState,2(1, (: (. 1, 1, REPAIR_BOAT, 0, EAST, 100, (. 10, 10 .), (: 10, 10, 10, 10 :) .), (. 2, 1, CRUISER, 0, EAST, 50, (. 11, 11 .), (: 5, 5, 5, 5 :) .) :)) from Simulator;
+Simulator: out VisibleShip,3(1, (: (. 1, 2, DESTROYER, 0, WEST, (. 10, 15 .) .) :)) to Strategy;
+Strategy: in VisibleShip,3(1, (: (. 1, 2, DESTROYER, 0, WEST, (. 10, 15 .) .) :)) from Simulator;
+Simulator: out StartSimulation,4(1) to Strategy;
+Strategy: in StartSimulation,4(1) from Simulator;
+
+Strategy: out OrderFireRequest,5(1,1,REPAIR,(: (. 11, 11 .) :)) to Simulator;
+Simulator: in OrderFireRequest,5(1,1,REPAIR,(: (. 11, 11 .) :)) from Strategy;
+
+Strategy: out OrderFireRequest,6(2,1,MISSILE,(: (. 10, 15 .) :)) to Simulator;
+Simulator: in OrderFireRequest,6(2,1,MISSILE,(: (. 10, 15 .) :)) from Strategy;
+
+Strategy: out FinishSimulation,7(1, 1) to Simulator;
+Simulator: in FinishSimulation,7(1, 1) from Strategy;
+
+Simulator: out StrategyVictory,8(1) to Strategy;
+Strategy: in StrategyVictory,8(1) from Simulator;
+Simulator: endinstance;
+Strategy: endinstance;
+endmsc;

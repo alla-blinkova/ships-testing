@@ -1,0 +1,93 @@
+SDT-SYSTEM-4.3
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+SourceDirectory=C:\Testing\Battleships\Strategy\
+TargetDirectory=C:\Testing\Battleships\Strategy\target\
+[DIAGRAMS]
+0 11 ctypes C:\Telelogic\SDL_TTCN_Suite4.3\sdt\include\ADT\ctypes.sun 0 998122282 ctypes ""
+0 11 BasicTypes ..\Packages\BasicTypes.sun 0 1461844820 BasicTypes ""
+1 51 ConfigFile ..\Config\ConfigFile.pr 0 1050572051 ConfigFile ""
+1 19 h2i ..\Packages\h2i.sop 0 1049104912 h2i ""
+1 19 i2h ..\Packages\i2h.sop 0 1049104930 i2h ""
+1 19 d2i ..\Packages\d2i.sop 0 1049104942 d2i ""
+1 19 i2d ..\Packages\i2d.sop 0 1049103778 i2d ""
+1 19 nw2i ..\Packages\nw2i.sop 0 1049104956 nw2i ""
+1 19 i2nw ..\Packages\i2nw.sop 0 1049104362 i2nw ""
+1 19 ns2i ..\Packages\ns2i.sop 0 1049104424 ns2i ""
+1 19 i2ns ..\Packages\i2ns.sop 0 1049104556 i2ns ""
+0 1 Model Model.ssy 0 1096643666 Model ""
+1 2 Strategy Strategy1.sbk 0 1462290742 Strategy ""
+2 5 Main Main.spr 0 1462288645 Main ""
+3 6 UpdateShipParams UpdateShipParams.spd 0 1518195656 UpdateShipParams ""
+3 6 EnemyCenter EnemyCenter.spd 0 1518195656 EnemyCenter ""
+3 6 StrategyStep StrategyStep.spd 0 1518195656 StrategyStep ""
+4 6 SolveCollision SolveCollision.spd 0 1518195656 SolveCollision ""
+4 6 isCollision isCollision.spd 0 1450028556 isCollision ""
+4 6 NewHeadingChange NewHeading.spd 0 1051709342 NewHeadingChange ""
+5 6 CosBetweenVectors CosBetweenVectors.spd 0 1053422188 CosBerweenVectors ""
+4 6 NextDirection NextDirection.spd 0 1049975280 NextDirection ""
+4 6 NextPosition NextPosition.spd 0 1051969650 NextPosition ""
+4 6 NextShipState NextShipState.spd 0 1518195656 NextShipState ""
+4 6 EnemyNotFound EnemyNotFound.spd 0 1518195656 EnemyNotFound ""
+4 6 EnemyFound EnemyFound.spd 0 1518195656 EnemyFound ""
+5 6 ActivateREPAIR ActivateREPAIR.spd 0 1050503108 ActivateREPAIR ""
+5 6 CanShootEnemyCenter CanShootEnemyCenter.spd 0 1050503172 CanShootEnemyCenter ""
+5 6 SortShootList SortShootList.spd 0 1050052454 SortShootList ""
+4 6 OutputOrder OutputOrder.spd 0 1050410414 OutputOrder ""
+4 6 FindStartPoint FindStartPoint.spd 0 1518195656 FindStartPoint ""
+4 6 FindHeadingTarget SearchHeadingTarget.spd 0 1518195656 FindHeadingTarget ""
+4 6 OnLand OnLand.spd 0 1052222042 OnLand ""
+4 6 NextShipStateAfterThreeSteps NextShipStateAfterThreeSteps.spd 0 1518195656 NextShipStateAfterThreeSteps ""
+4 6 TrajectoryCoordinates TrajectoryCoordinates.spd 8 1518195656 TrajectoryCoordinates ""
+2 5 Sim Sim.spr 0 1313691586 Sim ""
+[VIEWOPTIONS]
+ShowDirectories=True
+ShowLongMenus=True
+[ANALYSEROPTIONS]
+CaseSensitiveSDL=True
+ASN1KeywordFile=False
+ASN1Parameter=False
+CoderBufferInSDL=Octet-String
+Filter=False
+InstanceFile=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[STATEMATRIXOPTIONS]
+[INDEXOPTIONS]
+ShowSelectedTypes=True
+ShowSelectedUses=True
+ShowSelectedDiagrams=True
+FilterTypes=
+FilterUses=
+FilterDiagrams=
+NameFirst=True
+IndexAppearance=
+[PACKAGEGENERATOROPTIONS]
+DuplicateFile=
+[MAKEOPTIONS]
+CCompilerDriver=False
+GenerateASN1Coder=True
+GenerateEnvFunctions=True
+GenerateEnvHeader=True
+GenerateSDLCoder=True
+GenerateSignalNumbers=True
+Kernel=SCTAMDEBCOM
+MakefileMode=UserDefined
+TargetLanguage=Cadvanced
+UserMakefile=Model.m
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterFile=""
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

@@ -1,0 +1,10 @@
+RMRK: Test case Test8N0 started. (Iteration:0)
+{000000}[0005] SEND: InitDataComplete <Simulator->Strategy>
+{000000}[0007] SEND: ShipsCurrentState(1,(: (. 1, 1, 1, 1, 0, 50, (. 5, 40 .), (: 10, 10, 10, 0 :), 0, 0, 0, (. 25, 25 .) .) :)) <Simulator->Strategy>
+{000000}[0009] SEND: StartSimulation(1) <Simulator->Strategy>
+{000000}[0011] RECV: OrderSpeedRequest(1,1,-1.000000) <Strategy->Simulator>
+ERROR: Timeout error
+There is 1 signal left in the Queue:
+-- {004091} RECV: FinishSimulation(1,1) <Strategy->Simulator>
+RMRK: Test Test8N0 finished. Status=TAT_ERR_TIMEOUT (Iteration: 0)
+

@@ -1,0 +1,22 @@
+mscdocument Test7;
+msc Test7;
+Simulator: instance;
+Strategy: instance;
+Simulator: out InitDataComplete,1 to Strategy;
+Strategy: in InitDataComplete,1 from Simulator;
+Simulator: out ShipsCurrentState,2(1, (: (. 1, 1, CRUISER, 1, NORTH, 50, (. 5, 40 .), (: 10, 10, 10, 0 :) .) :)) to Strategy;
+Strategy: in ShipsCurrentState,2(1, (: (. 1, 1, CRUISER, 1, NORTH, 50, (. 5, 40 .), (: 10, 10, 10, 0 :) .) :)) from Simulator;
+Simulator: out StartSimulation,4(1) to Strategy;
+Strategy: in StartSimulation,4(1) from Simulator;
+
+Strategy: out OrderSpeedRequest,5(1,1,-1) to Simulator;
+Simulator: in OrderSpeedRequest,5(1,1,-1) from Strategy;
+
+Strategy: out OrderTurnRequest,6(1,1,RIGHT) to Simulator;
+Simulator: in OrderTurnRequest,6(1,1,RIGHT) from Strategy;
+
+Strategy: out FinishSimulation,8(1, 1) to Simulator;
+Simulator: in FinishSimulation,8(1, 1) from Strategy;
+Strategy: endinstance;
+Simulator: endinstance;
+endmsc;

@@ -1,0 +1,9 @@
+RMRK: Test case test1N0 started. (Iteration:0)
+{000000}[0005] SEND: InitDataComplete <Simulator->Strategy>
+{000000}[0007] SEND: ShipsCurrentState(1,(: (. 1, 1, 1, 5, 0, 70, (. 60, 60 .), (: 15, 15, 3, 0 :) .) :)) <Simulator->Strategy>
+{000000}[0009] SEND: StartSimulation(0) <Simulator->Strategy>
+{000000}[0011] RECV: OrderTurnRequest(1,1,0) <Strategy->Simulator>
+{000000}[0013] RECV: FinishSimulation(0,1) <Strategy->Simulator>
+{000000}[0015] SEND: StrategyVictory(1) <Simulator->Strategy>
+RMRK: Test test1N0 finished. Status=TAT_OK (Iteration: 0)
+

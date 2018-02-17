@@ -1,0 +1,19 @@
+
+USERTARGET = C:\Testing\Battleships\Strategy\target\Model_env$(sctOEXTENSION) C:\Testing\Battleships\Strategy\target\Model_cod$(sctOEXTENSION)
+USERLIBRARIES = -lm
+
+C:\Testing\Battleships\Strategy\target\Model_env$(sctOEXTENSION): C:\Testing\Battleships\Strategy\target\Model_env.c C:\Testing\Battleships\Strategy\target\Model.ifc Model_cod.h
+	$(sctCC) @<<
+	$(sctCPPFLAGS) $(sctCCFLAGS)
+	$(sctIFDEF)
+	/FoC:\Testing\Battleships\Strategy\target\Model_env$(sctOEXTENSION)
+	C:\Testing\Battleships\Strategy\target\Model_env.c
+<<
+
+C:\Testing\Battleships\Strategy\target\Model_cod$(sctOEXTENSION) : C:\Testing\Battleships\Strategy\target\Model_cod.c C:\Testing\Battleships\Strategy\target\Model_cod.h
+	$(sctCC) @<<
+	$(sctCPPFLAGS) $(sctCCFLAGS)
+	$(sctIFDEF)
+	/FoC:\Testing\Battleships\Strategy\target\Model_cod$(sctOEXTENSION)
+	C:\Testing\Battleships\Strategy\target\Model_cod.c
+<<
